@@ -1,0 +1,148 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+/*Header*/
+.webp .header{
+    background-image: url(../img/banner.webp);
+}
+
+.no-webp .header{
+    background-image: url(../img/banner.jpg);
+}
+
+.header{
+    background-image: url(../img/banner.jpg);
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.header__text{
+    text-align: center;
+    color: v.$blanco;
+    margin-top: 5rem;
+}
+
+
+.barra{
+    padding-top: 4rem;
+}
+
+@media (min-width: 768px){ 
+    
+    .header__text{
+        margin-top: 15rem;
+    }
+
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.logo{
+    color: v.$blanco;
+}
+
+.logo__nombre{
+    font-weight: normal;
+}
+
+.logo__bold{
+    font-weight: bold;
+}
+
+
+@media (min-width: 768px){ 
+    .navegacion{
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+.navegacion__enlace{
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color: v.$blanco;
+}
+
+@media (min-width: 768px){ 
+    .contenido-principal{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
+}
+
+.entrada{
+    border-bottom: .1rem solid v.$gris;
+    margin-bottom: 2rem;
+}
+
+.boton{
+    display: block;
+    font-family: v.$fuenteHeading;
+    color: v.$blanco;
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    border: none;
+
+}
+
+.boton:hover{
+    cursor: pointer;
+}
+
+@media (min-width: 768px){ 
+    .boton{
+        display: inline-block;
+    }
+}
+
+.boton--primario{
+    background-color: v.$negro;
+}
+
+.boton--secundario{
+    background-color: v.$primario;
+}
+
+.cursos{
+    list-style: none;
+}
+
+.widget-curso{
+    border-bottom: .1rem solid v.$gris;
+    margin-bottom: 2rem;
+}
+
+.widget-curso:last-of-type{
+    border: none;
+    margin-bottom: 0;
+}
+
+.widget-curso__info, .curso__info{
+    font-family: v.$fuenteHeading;
+    font-weight: bold;
+}
+
+.widget-curso__label, .curso__label{
+    font-weight: normal;
+}
+
+.widget-curso__info, .widget-curso__label, .curso__info, .curso__label{
+    font-size: 2rem;
+}
+
+.footer{
+    background-color: v.$negro;
+    padding-bottom: 3rem;
+    margin-top: 3rem;
+}
