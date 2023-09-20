@@ -34,7 +34,7 @@ function images(done) {
         optimizationLevel: 3
     }
 
-    src('src/img/**/*.{jpg,png}')
+    src('src/img/**/*.{jpg,png,jpeg}')
         .pipe(cache(imageMin(opciones)))
         .pipe(dest('build/img'));
 
@@ -47,7 +47,7 @@ function webpVersion(done) {
         quality: 50
     };
 
-    src('src/img/**/*.{jpg,png}')
+    src('src/img/**/*.{jpg,png,jpeg}')
         .pipe(webp(opciones))
         .pipe(dest('build/img'));
 
@@ -60,7 +60,7 @@ function avifVersion(done) {
         quality: 50
     };
 
-    src('src/img/**/*.{jpg,png}')
+    src('src/img/**/*.{jpg,png,jpeg}')
         .pipe(avif(opciones))
         .pipe(dest('build/img'));
 
