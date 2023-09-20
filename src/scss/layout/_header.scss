@@ -69,14 +69,6 @@
     color: v.$blanco;
 }
 
-@media (min-width: 768px){ 
-    .contenido-principal{
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        column-gap: 4rem;
-    }
-}
-
 .entrada{
     border-bottom: .1rem solid v.$gris;
     margin-bottom: 2rem;
@@ -118,26 +110,16 @@
     list-style: none;
 }
 
-.widget-curso{
-    border-bottom: .1rem solid v.$gris;
-    margin-bottom: 2rem;
-}
-
-.widget-curso:last-of-type{
-    border: none;
-    margin-bottom: 0;
-}
-
-.widget-curso__info, .curso__info{
+.curso__info{
     font-family: v.$fuenteHeading;
     font-weight: bold;
 }
 
-.widget-curso__label, .curso__label{
+.curso__label{
     font-weight: normal;
 }
 
-.widget-curso__info, .widget-curso__label, .curso__info, .curso__label{
+.curso__info, .curso__label{
     font-size: 2rem;
 }
 
