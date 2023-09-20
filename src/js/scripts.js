@@ -1,8 +1,3 @@
-document.addEventListener('DOMContentLoaded', function(){
-    iniciarApp();
-});
-
-
 const formulario = document.querySelector('.formulario');
 const nombreInput = document.querySelector('#nombre');
 const emailInput = document.querySelector('#email');
@@ -34,11 +29,6 @@ nombreInput.addEventListener('input', escucharInput);
 emailInput.addEventListener('input', escucharInput);
 mensajeInput.addEventListener('input', escucharInput);
 
-function iniciarApp() {
-    scrollNav();
-}
-
-
 function escucharInput(evento) {
     datos[evento.target.id] = evento.target.value;
 }
@@ -68,14 +58,3 @@ function mostrarMensaje(mensaje, error = null) {
 
 }
 
-function scrollNav() {
-    const enlace = document.querySelector('#enlace-contacto')
-    enlace.addEventListener('click', function(e){
-        e.preventDefault();
-
-        const seccionScroll = e.target.attributes.href.value;
-        const seccion = document.querySelector(seccionScroll);
-
-        seccion.scrollIntoView({behavior: "smooth"});
-    });
-}
