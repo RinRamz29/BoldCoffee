@@ -11,8 +11,6 @@ use PHPMailer\PHPMailer\SMTP;
 
 $phpmailer = new PHPMailer();
 
-$phpmailer->SMTPDebug = SMTP::DEBUG_SERVER;
-
 $phpmailer->isSMTP();
 $phpmailer->Host = 'smtp-relay.sendinblue.com';
 $phpmailer->SMTPAuth = true;
@@ -26,10 +24,7 @@ $phpmailer->addAddress("juanp162001@gmail.com");
     
 $phpmailer->Subject = 'Hola';
 $phpmailer->Body = $mensaje;
-   
-if($phpmailer->send()){
-    echo 'Hola';
-}
-else{
-    echo 'No hola';
-}
+
+$phpmailer->send();
+
+header("Location: contactoEnviado.html");
