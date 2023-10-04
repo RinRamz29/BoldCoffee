@@ -27,4 +27,4 @@ $phpmailer->Body = $mensaje;
 
 $phpmailer->send();
 
-header("Location: contactoEnviado.html");
+header("Location: contactoEnviado.php");
