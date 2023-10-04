@@ -65,7 +65,7 @@
         </div>
     </main>
 
-    <article class="main">
+    <section class="main">
         <h2>Sobre Nuestros Cursos</h2>
         <div class="main-content">
             <div class="main-text center">
@@ -79,9 +79,9 @@
                 <img loading="lazy" width="200" height="300" src="img/Coffee.jpg" alt="Imagen de granos de café">
             </picture>
         </div>
-    </article>
+    </section>
 
-    <article class="main">
+    <section class="main">
         <div class="main-content">
             <picture>
                 <source srcset="img/Coffee2.avif" type="image/avif">
@@ -94,7 +94,7 @@
                 <a class="button" href="cursos.php">Explora</a>
             </div>
         </div>
-    </article>
+    </section>
 
     <footer class="footer">
         <div class="contenedor contenedor--footer">
