@@ -15,7 +15,7 @@
     <title>BoldCoffee</title>
     <meta name="description" content="Página web de cursos de café">
     <!-- Prefetch -->
-    <link rel="prefetch" href="nosotros.html" as="document">
+    <link rel="prefetch" href="nosotros.php" as="document">
 
     <!--Preload-->
     <link rel="preload" href="css/app.css" as="style">
@@ -33,13 +33,13 @@
     <header class="header">
         <div class="contenedor">
             <div class="barra">
-                <a class="logo" href="Index.html">
+                <a class="logo" href="Index.php">
                     <h1 class="logo__nombre no-margin centrar-text">Bold<span class="logo__bold">Coffee</span></h1>
                 </a>
                 <nav class="navegacion">
-                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
-                    <a id="enlace-contacto" href="contacto.html" class="navegacion__enlace">Contacto</a>
-                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.php" class="navegacion__enlace">Cursos</a>
+                    <a id="enlace-contacto" href="contacto.php" class="navegacion__enlace">Contacto</a>
+                    <a href="nosotros.php" class="navegacion__enlace">Nosotros</a>
                 </nav>
             </div>
         </div>
@@ -67,7 +67,7 @@
                 <p class="curso__label">Cupo:
                     <span class="curso__info">20</span>
                 </p>
-                <a href="entrada.html" class="boton boton--secundario">Más Información</a>
+                <a href="entrada.php" class="boton boton--secundario">Más Información</a>
                 <p class="curso__descripcion">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rem, vel et eligendi aut esse velit unde nulla libero modi aspernatur doloremque asperiores minima, natus delectus, corrupti repellat voluptatem ex!
                 </p>
@@ -90,7 +90,7 @@
                 <p class="curso__label">Cupo:
                     <span class="curso__info">20</span>
                 </p>
-                <a href="entrada.html" class="boton boton--secundario">Más Información</a>
+                <a href="entrada.php" class="boton boton--secundario">Más Información</a>
                 <p class="curso__descripcion">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rem, vel et eligendi aut esse velit unde nulla libero modi aspernatur doloremque asperiores minima, natus delectus, corrupti repellat voluptatem ex!
                 </p>
@@ -113,7 +113,7 @@
                 <p class="curso__label">Cupo:
                     <span class="curso__info">20</span>
                 </p>
-                <a href="entrada.html" class="boton boton--secundario">Más Información</a>
+                <a href="entrada.php" class="boton boton--secundario">Más Información</a>
                 <p class="curso__descripcion">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rem, vel et eligendi aut esse velit unde nulla libero modi aspernatur doloremque asperiores minima, natus delectus, corrupti repellat voluptatem ex!
                 </p>
@@ -125,13 +125,13 @@
         <footer class="footer">
             <div class="contenedor contenedor--footer">
                 <div class="barra">
-                    <a class="logo" href="Index.html">
+                    <a class="logo" href="Index.php">
                         <h1 class="logo__nombre no-margin">Bold<span class="logo__bold">Coffee</span></h1>
                     </a>
                     <nav class="navegacion">
-                        <a href="cursos.html" class="navegacion__enlace">Cursos</a>
-                        <a id="enlace-contacto" href="contacto.html" class="navegacion__enlace">Contacto</a>
-                        <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                        <a href="cursos.php" class="navegacion__enlace">Cursos</a>
+                        <a id="enlace-contacto" href="contacto.php" class="navegacion__enlace">Contacto</a>
+                        <a href="nosotros.php" class="navegacion__enlace">Nosotros</a>
                         <a href="https://www.Instagram.com" class="navegacion__enlace">Instagram</a>
                         <a href="https://www.Facebook.com" class="navegacion__enlace">Facebook</a>
                     </nav>

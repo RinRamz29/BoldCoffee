@@ -15,7 +15,7 @@
     <title>BoldCoffee</title>
     <meta name="description" content="Página web de cursos de café">
     <!-- Prefetch -->
-    <link rel="prefetch" href="nosotros.html" as="document">
+    <link rel="prefetch" href="nosotros.php" as="document">
 
     <!--Preload-->
     <link rel="preload" href="css/app.css" as="style">
@@ -33,14 +33,14 @@
     <header class="header">
         <div class="contenedor">
             <div class="barra">
-                <a class="logo" href="Index.html">
+                <a class="logo" href="Index.php">
                     <h1 class="logo__nombre no-margin centrar-text">Bold<span class="logo__bold">Coffee</span></h1>
                 </a>
 
                 <nav class="navegacion">
-                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
-                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
-                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.php" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.php" class="navegacion__enlace">Contacto</a>
+                    <a href="nosotros.php" class="navegacion__enlace">Nosotros</a>
                 </nav>
             </div>
         </div>
@@ -53,19 +53,38 @@
 
 
     <div id="contacto" class="contenedor">
-        <h3 class="centrar-text">Gracias por tu mensaje</h3>
+        <h3 class="centrar-text">Contacto</h3>
+        <div class="contacto-bg"></div>
+        <form class="formulario" action="send-email.php" method="post">
+             <div class="campo">
+                 <label class="campo__label" for="nombre">Nombre</label>
+                 <input class="campo__field" type="text" name="name" placeholder="Tu Nombre" id="nombre" required>
+             </div>
+             <div class="campo">
+                 <label class="campo__label" for="email">E-mail</label>
+                 <input class="campo__field" type="email" name="email"  placeholder="Tu E-mail" id="email" required>
+             </div>
+             <div class="campo">
+                 <label class="campo__label" for="mensaje">Mensaje</label>
+                 <textarea class="campo__field campo__field--textarea" name="mensaje" id="mensaje" cols="30" rows="10" required></textarea>
+             </div>
+    
+             <div class="campo">
+                 <input type="submit" value="Enviar" name="send" class="boton boton--primario">
+             </div>
+        </form>
     </div>
 
     <footer class="footer">
         <div class="contenedor contenedor--footer">
             <div class="barra">
-                <a class="logo" href="Index.html">
+                <a class="logo" href="Index.php">
                     <h1 class="logo__nombre no-margin">Bold<span class="logo__bold">Coffee</span></h1>
                 </a>
                 <nav class="navegacion">
-                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
-                    <a id="enlace-contacto" href="contacto.html" class="navegacion__enlace">Contacto</a>
-                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.php" class="navegacion__enlace">Cursos</a>
+                    <a id="enlace-contacto" href="contacto.php" class="navegacion__enlace">Contacto</a>
+                    <a href="nosotros.php" class="navegacion__enlace">Nosotros</a>
                     <a href="https://www.Instagram.com" class="navegacion__enlace">Instagram</a>
                     <a href="https://www.Facebook.com" class="navegacion__enlace">Facebook</a>
                 </nav>
