@@ -39,7 +39,7 @@
                 </a>
                 <nav class="navegacion">
                     <a href="cursos.html" class="navegacion__enlace">Cursos</a>
-                    <a id="enlace-contacto" href="index.php" class="navegacion__enlace">Contacto</a>
+                    <a id="enlace-contacto" href="contacto.html" class="navegacion__enlace">Contacto</a>
                     <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
                 </nav>
             </div>
@@ -76,7 +76,7 @@
                 </a>
                 <nav class="navegacion">
                     <a href="cursos.html" class="navegacion__enlace">Cursos</a>
-                    <a id="enlace-contacto" href="index.php" class="navegacion__enlace">Contacto</a>
+                    <a id="enlace-contacto" href="contacto.html" class="navegacion__enlace">Contacto</a>
                     <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
                     <a href="https://www.Instagram.com" class="navegacion__enlace">Instagram</a>
                     <a href="https://www.Facebook.com" class="navegacion__enlace">Facebook</a>

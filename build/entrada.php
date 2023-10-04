@@ -14,6 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BoldCoffee</title>
     <meta name="description" content="Página web de cursos de café">
+
     <!-- Prefetch -->
     <link rel="prefetch" href="nosotros.html" as="document">
 
@@ -36,23 +37,40 @@
                 <a class="logo" href="Index.html">
                     <h1 class="logo__nombre no-margin centrar-text">Bold<span class="logo__bold">Coffee</span></h1>
                 </a>
-
                 <nav class="navegacion">
                     <a href="cursos.html" class="navegacion__enlace">Cursos</a>
-                    <a href="index.php" class="navegacion__enlace">Contacto</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
                     <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
                 </nav>
             </div>
         </div>
-
         <div class="header__text">
             <h2 class="no-margin">BoldCoffee Cursos</h2>
             <p class="no-margin">Aprende de los expertos con nuestros cursos especializados</p>
         </div>
     </header>
 
+    <main class="contenedor">
+        <h3 class="centrar-text">Más del Curso</h3>
+        <div class="contenedor-curso">
+            <div class="center">
+                <h3>Nuestro Curso</h3>
+                <p>En 'De 0 a Barista Experto', descubre la magia detrás de cada taza. Bajo la mentoría de expertos, viaja desde el grano a la perfección en la preparación. Desarrolla habilidades, despierta tus sentidos y convierte el café en tu obra maestra. ¡Un curso para quienes buscan sabor y arte en cada sorbo!</p>
+            </div>
+            <div>
+                <picture>
+                    <source srcset="img/blog1.avif" type="image/avif">
+                    <source srcset="img/blog1.webp" type="image/webp">
+                    <img loading="lazy" width="200" height="300" src="img/blog1.jpg" alt="Imagen de café molido">
+                </picture>
+            </div>
+        </div>
+        
+        
+    </main>
+
     <div id="contacto" class="contenedor">
-        <h3 class="centrar-text">Contacto</h3>
+        <h3 class="centrar-text">Rellena el formulario para más información del curso</h3>
         <div class="contacto-bg"></div>
         <form action="" class="formulario">
              <div class="campo">
@@ -82,7 +100,7 @@
                 </a>
                 <nav class="navegacion">
                     <a href="cursos.html" class="navegacion__enlace">Cursos</a>
-                    <a id="enlace-contacto" href="index.php" class="navegacion__enlace">Contacto</a>
+                    <a id="enlace-contacto" href="contacto.html" class="navegacion__enlace">Contacto</a>
                     <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
                     <a href="https://www.Instagram.com" class="navegacion__enlace">Instagram</a>
                     <a href="https://www.Facebook.com" class="navegacion__enlace">Facebook</a>
@@ -95,4 +113,3 @@
     <script src="js/modernizr.js"></script>
 </body>
 </html>
-
