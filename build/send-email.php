@@ -1,4 +1,3 @@
-
 <?php
 
 $userName = $_POST["name"];
@@ -10,21 +9,27 @@ require "vendor/autoload.php";
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 
-$mail = new PHPMailer(true);
+$phpmailer = new PHPMailer();
 
-$mail->isSMTP();
-$mail->SMTPAuth = true;
+$phpmailer->SMTPDebug = SMTP::DEBUG_SERVER;
 
-$mail->Host = "smtp-relay.sendinblue.com";
-$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-$mail->Port = 587;
-
-$mail->Username = "juanp162001@gmail.com";
-$mail->Password = "zkO1QV0PC83rEFMj";
-
-$mail->setFrom($email, $userName);
-$mail->addAddress("juanp162001@gmail.com", "Juan");
-
-$mail->Body = $mensaje;
-
-$mail->send();
+$phpmailer->isSMTP();
+$phpmailer->Host = 'smtp-relay.sendinblue.com';
+$phpmailer->SMTPAuth = true;
+$phpmailer->Port = 587;
+$phpmailer->Username = 'juanp162001@gmail.com';
+$phpmailer->Password = 'zkO1QV0PC83rEFMj';
+$phpmailer->SMTPSecure = 'tls';
+    
+$phpmailer->setFrom("juanp162001@gmail.com");
+$phpmailer->addAddress("juanp162001@gmail.com");
+    
+$phpmailer->Subject = 'Hola';
+$phpmailer->Body = $mensaje;
+   
+if($phpmailer->send()){
+    echo 'Hola';
+}
+else{
+    echo 'No hola';
+}
