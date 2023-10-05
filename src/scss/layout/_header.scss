@@ -30,19 +30,34 @@
     color: v.$blanco;
 
     h1 {
-        font-size: 8rem;
+        font-size: 5rem;
+        margin-bottom: 2rem;
+
+        @include m.tablet {
+            font-size: 8rem;
+        }
     }
 
     h2 {
-        font-size: 4rem;
+        font-size: 3rem;
+        margin-bottom: 2rem;
+
         font-weight: normal;
+        @include m.tablet {
+            font-size: 4rem;
+        }
     }
 
     a {
-        font-size: 2.3rem;
+        font-size: 2rem;
+
+        @include m.tablet {
+            font-size: 2.3rem;
+        }
     }
 
     .garantia{
+        margin-top: 2rem;
         color: v.$gris;
     }
 }
