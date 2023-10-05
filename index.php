@@ -54,6 +54,7 @@
             <picture>
                 <source srcset="build/img/Barista.avif" type="image/avif">
                 <source srcset="build/img/Barista.webp" type="image/webp">
+                <source srcset="build/img/Barista.jpg" type="image/jpeg">
                 <img loading="lazy" width="200" height="300" src="build/img/Barista.jpg" alt="Imagen de barista preparando café">
             </picture>
             <div class="center main-text">
@@ -72,6 +73,7 @@
             <picture>
                 <source srcset="build/img/Coffee.avif" type="image/avif">
                 <source srcset="build/img/Coffee.webp" type="image/webp">
+                <source srcset="build/img/Coffee.jpg" type="image/jpeg">
                 <img loading="lazy" width="200" height="300" src="build/img/Coffee.jpg" alt="Imagen de granos de café">
             </picture>
         </div>
@@ -82,6 +84,7 @@
             <picture>
                 <source srcset="build/img/Coffee2.avif" type="image/avif">
                 <source srcset="build/img/Coffee2.webp" type="image/webp">
+                <source srcset="build/img/Coffee2.jpg" type="image/jpeg">
                 <img loading="lazy" width="200" height="300" src="build/img/Coffee2.jpg" alt="Imagen de granos de café">
             </picture>
             <div class="main-text center">
