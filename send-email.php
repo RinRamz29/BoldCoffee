@@ -7,7 +7,6 @@ $mensaje = $_POST["mensaje"];
 require "vendor/autoload.php";
 
 use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
 
 $phpmailer = new PHPMailer();
 
@@ -20,11 +19,15 @@ $phpmailer->Password = 'zkO1QV0PC83rEFMj';
 $phpmailer->SMTPSecure = 'tls';
     
 $phpmailer->setFrom("juanp162001@gmail.com");
-$phpmailer->addAddress("juanp162001@gmail.com");
+$phpmailer->addAddress($email);
     
 $phpmailer->Subject = 'Hola';
 $phpmailer->Body = $mensaje;
 
-$phpmailer->send();
 
-header("Location: contactoEnviado.php");
+if ($phpmailer->send()){
+    header("Location: contactoEnviado.php");
+} else {
+    header("Location: contactoNoEnviado.php");
+}
+

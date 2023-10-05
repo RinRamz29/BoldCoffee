@@ -14,12 +14,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BoldCoffee</title>
     <meta name="description" content="Página web de cursos de café">
+
     <!-- Prefetch -->
     <link rel="prefetch" href="nosotros.php" as="document">
 
     <!--Preload-->
-    <link rel="preload" href="css/app.css" as="style">
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="preload" href="build/css/app.css" as="style">
+    <link rel="stylesheet" href="build/css/app.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:ital,wght@0,400;1,700&display=swap" crossorigin="crossorigin" as="font" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,10 +37,9 @@
                 <a class="logo" href="Index.php">
                     <h1 class="logo__nombre no-margin centrar-text">Bold<span class="logo__bold">Coffee</span></h1>
                 </a>
-
                 <nav class="navegacion">
                     <a href="cursos.php" class="navegacion__enlace">Cursos</a>
-                    <a href="contacto.php" class="navegacion__enlace">Contacto</a>
+                    <a id="enlace-contacto" href="contacto.php" class="navegacion__enlace">Contacto</a>
                     <a href="nosotros.php" class="navegacion__enlace">Nosotros</a>
                 </nav>
             </div>
@@ -51,12 +51,24 @@
         </div>
     </header>
 
+    <main class="contenedor">
+        <h3 class="centrar-text">Sobre Nosotros</h3>
+        <div class="sobre-nosotros">
+            <div class="sobre-nosotros__imagen">
+                <picture>
+                    <source srcset="build/img/nosotros.avif" type="image/avif">
+                    <source srcset="build/img/nosotros.webp" type="image/webp">
+                    <img loading="lazy" width="200" height="300" src="build/img/nosotros.jpg" alt="Imagen con muchas tazas con café con arte latte">
+                </picture>
+            </div>
+            <div class="sobre-nosotros__text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe necessitatibus, tempora dolores atque error molestias aspernatur? Voluptas autem laborum ipsum praesentium quo accusamus optio quod nihil. Quod inventore nulla excepturi!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, autem. Accusantium assumenda consequatur voluptatum nihil facilis molestiae, dolor at vero dolore rem quia commodi maiores! Hic minus deserunt maxime laborum!</p>
+            </div>
+        </div>
+    </main>
 
-    <div id="contacto" class="contenedor">
-        <h3 class="centrar-text">Gracias por tu mensaje</h3>
-    </div>
-
-    <footer class="footer">
+   <footer class="footer">
         <div class="contenedor contenedor--footer">
             <div class="barra">
                 <a class="logo" href="Index.php">
@@ -73,6 +85,6 @@
         </div>
     </footer>
 
+    <script src="js/modernizr.js"></script>
 </body>
 </html>
-

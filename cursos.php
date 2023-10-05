@@ -18,8 +18,8 @@
     <link rel="prefetch" href="nosotros.php" as="document">
 
     <!--Preload-->
-    <link rel="preload" href="css/app.css" as="style">
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="preload" href="build/css/app.css" as="style">
+    <link rel="stylesheet" href="build/css/app.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:ital,wght@0,400;1,700&display=swap" crossorigin="crossorigin" as="font" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,9 +54,9 @@
         <div class="curso">
             <div class="curso-imagen">
                 <picture>
-                    <source srcset="img/blog1.avif" type="image/avif">
-                    <source srcset="img/blog1.webp" type="image/webp">
-                    <img loading="lazy" width="200" height="300" src="img/blog1.jpg" alt="Imagen de café molido">
+                    <source srcset="build/img/blog1.avif" type="image/avif">
+                    <source srcset="build/img/blog1.webp" type="image/webp">
+                    <img loading="lazy" width="200" height="300" src="build/img/blog1.jpg" alt="Imagen de café molido">
                 </picture>
             </div>
             <div class="curso-informacion">
@@ -77,9 +77,9 @@
         <div class="curso">
             <div class="curso-imagen">
                 <picture>
-                    <source srcset="img/blog2.avif" type="image/avif">
-                    <source srcset="img/blog2.webp" type="image/webp">
-                    <img loading="lazy" width="200" height="300" src="img/blog2.jpg" alt="Imagen de una taza de café con un libro">
+                    <source srcset="build/img/blog2.avif" type="image/avif">
+                    <source srcset="build/img/blog2.webp" type="image/webp">
+                    <img loading="lazy" width="200" height="300" src="build/img/blog2.jpg" alt="Imagen de una taza de café con un libro">
                 </picture>   
             </div>
             <div class="curso-info">
@@ -100,9 +100,9 @@
         <div class="curso">
             <div class="curso-imagen">
                 <picture>
-                    <source srcset="img/blog3.avif" type="image/avif">
-                    <source srcset="img/blog3.webp" type="image/webp">
-                    <img loading="lazy" width="200" height="300" src="img/blog3.jpg" alt="Imgen de taza de café con granos de café a los lados">
+                    <source srcset="build/img/blog3.avif" type="image/avif">
+                    <source srcset="build/img/blog3.webp" type="image/webp">
+                    <img loading="lazy" width="200" height="300" src="build/img/blog3.jpg" alt="build/imgen de taza de café con granos de café a los lados">
                 </picture>
             </div>
             <div class="curso-info">

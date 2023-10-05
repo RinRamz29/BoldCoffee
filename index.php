@@ -10,6 +10,7 @@
 
     gtag('config', 'G-HN6EQRPV6C');
     </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BoldCoffee</title>
@@ -18,8 +19,8 @@
     <link rel="prefetch" href="nosotros.php" as="document">
 
     <!--Preload-->
-    <link rel="preload" href="css/app.css" as="style">
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="preload" href="build/css/app.css" as="style">
+    <link rel="stylesheet" href="build/css/app.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:ital,wght@0,400;1,700&display=swap" crossorigin="crossorigin" as="font" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,15 +48,16 @@
         <div class="header__text">
             <h2 class="no-margin">BoldCoffee Cursos</h2>
             <p class="no-margin">Aprende de los expertos con nuestros cursos especializados</p>
+            <a class="button" href="cursos.php">Explora Ahora</a>
         </div>
     </header>
 
     <main class="container-curso-destacado">
         <div class="curso-destacado">
             <picture>
-                <source srcset="img/Barista.avif" type="image/avif">
-                <source srcset="img/Barista.webp" type="image/webp">
-                <img loading="lazy" width="200" height="300" src="img/Barista.jpg" alt="Imagen de barista preparando café">
+                <source srcset="build/img/Barista.avif" type="image/avif">
+                <source srcset="build/img/Barista.webp" type="image/webp">
+                <img loading="lazy" width="200" height="300" src="build/img/Barista.jpg" alt="Imagen de barista preparando café">
             </picture>
             <div class="center main-text">
                 <h1>Barista de 0 a Experto</h1>
@@ -74,9 +76,9 @@
                 <a class="button" href="cursos.php">Explora</a>
             </div>
             <picture>
-                <source srcset="img/Coffee.avif" type="image/avif">
-                <source srcset="img/Coffee.webp" type="image/webp">
-                <img loading="lazy" width="200" height="300" src="img/Coffee.jpg" alt="Imagen de granos de café">
+                <source srcset="build/img/Coffee.avif" type="image/avif">
+                <source srcset="build/img/Coffee.webp" type="image/webp">
+                <img loading="lazy" width="200" height="300" src="build/img/Coffee.jpg" alt="Imagen de granos de café">
             </picture>
         </div>
     </section>
@@ -84,9 +86,9 @@
     <section class="main">
         <div class="main-content">
             <picture>
-                <source srcset="img/Coffee2.avif" type="image/avif">
-                <source srcset="img/Coffee2.webp" type="image/webp">
-                <img loading="lazy" width="200" height="300" src="img/Coffee2.jpg" alt="Imagen de granos de café">
+                <source srcset="build/img/Coffee2.avif" type="image/avif">
+                <source srcset="build/img/Coffee2.webp" type="image/webp">
+                <img loading="lazy" width="200" height="300" src="build/img/Coffee2.jpg" alt="Imagen de granos de café">
             </picture>
             <div class="main-text center">
                 <h3>En BoldCoffee somos expertos</h3>
