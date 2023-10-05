@@ -24,13 +24,16 @@ jobs:
         with:
           api-key: ${{ secrets.IONOS_API_KEY }}
           service-host: api-us.ionos.space
-          project-id: e9fabd09-04e4-4462-85ef-71f50685ce3f
+          project-id: 2bbffcc2-d194-472b-a143-82424b391c5b
           action: retrieve-info
 
 
   build:
     name: build
     needs: retrieve-project
+    permissions:
+      contents: read
+      packages: write
     if: ${{ needs.retrieve-project.outputs.deployment-enabled == 'true' }}
     uses: ./.github/workflows/BoldCoffee-build.yaml
     with:
@@ -50,6 +53,6 @@ jobs:
         with:
           api-key: ${{ secrets.IONOS_API_KEY }}
           service-host: api-us.ionos.space
-          project-id: e9fabd09-04e4-4462-85ef-71f50685ce3f
+          project-id: 2bbffcc2-d194-472b-a143-82424b391c5b
           branch-id: ${{ needs.retrieve-project.outputs.branch-id }}
           action: dispatch-deployments
