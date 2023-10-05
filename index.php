@@ -35,24 +35,21 @@
         <div class="contenedor">
             <div class="barra">
                 <a class="logo" href="Index.php">
-                    <h1 class="logo__nombre no-margin centrar-text">Bold<span class="logo__bold">Coffee</span></h1>
+                    <p class="logo__nombre no-margin centrar-text">Bold<span class="logo__bold">Coffee</span></p>
                 </a>
-                <nav class="navegacion">
-                    <a href="cursos.php" class="navegacion__enlace">Cursos</a>
-                    <a id="enlace-contacto" href="contacto.php" class="navegacion__enlace">Contacto</a>
-                    <a href="nosotros.php" class="navegacion__enlace">Nosotros</a>
-                </nav>
             </div>
         </div>
 
         <div class="header__text">
-            <h2 class="no-margin">BoldCoffee Cursos</h2>
-            <p class="no-margin">Aprende de los expertos con nuestros cursos especializados</p>
-            <a class="button" href="cursos.php">Explora Ahora</a>
+            <h1 class="no-margin">Entrénate con uno de los mejores cursos del mercado</h2>
+            <h2 class="no-margin">Somos los líderes en México en entrenar baristas especializados</h2>
+            <a id="contact-button" class="button" href="#contacto">Entrénate Ahora</a>
+            <p class="garantia">Garantía de devolución de 30 días.</p>
         </div>
     </header>
 
-    <main class="container-curso-destacado">
+    <main class="main">
+        <h2>Sobre Nuestros Cursos</h2>
         <div class="curso-destacado">
             <picture>
                 <source srcset="build/img/Barista.avif" type="image/avif">
@@ -61,19 +58,16 @@
             </picture>
             <div class="center main-text">
                 <h1>Barista de 0 a Experto</h1>
-                <p>¡Transforma tu pasión por el café en un arte con nuestro curso 'De 0 a Barista Experto'!</p>
-                <a class="button" href="entrada.php">Explora</a>
+                <p>¡Transforma tu pasión por el café en un arte con nuestro curso 'De 0 a Barista Experto'! <br> Con nuestro curso de barista de 0 a experto aprenderás de los mejores para llegar a ser un barista máster en el área.</p>
             </div>
         </div>
     </main>
 
     <section class="main">
-        <h2>Sobre Nuestros Cursos</h2>
         <div class="main-content">
             <div class="main-text center">
                 <h3>En BoldCoffee sabemos lo que hacemos</h3>
-                <p> Al elegirnos, te unes a una red invaluable de especialistas y aseguras una educación líder en el mercado.</p>
-                <a class="button" href="cursos.php">Explora</a>
+                <p>Al elegirnos, te unes a una red invaluable de especialistas y aseguras una educación líder en el mercado. Somos la compañia más calificada para entrenar baristas expertos, con nuestra tecnología de punta y nuestros maestros expertos, aprenderás con el mejor material y los mejores maestros.</p>
             </div>
             <picture>
                 <source srcset="build/img/Coffee.avif" type="image/avif">
@@ -92,11 +86,34 @@
             </picture>
             <div class="main-text center">
                 <h3>En BoldCoffee somos expertos</h3>
-                <p>Nos destacamos por calidad y excelencia.</p>
-                <a class="button" href="cursos.php">Explora</a>
+                <p>Nos destacamos por calidad y excelencia. Con más de 50 años de experiencia, materiales y maestros excelentes, puedes estar seguro que te entrenaremos para ser el barista de tus sueños.</p>
             </div>
         </div>
     </section>
+
+    
+    <div id="contacto" class="contenedor">
+        <h3 class="centrar-text">Contáctanos ya para obtener información y cotizaciones</h3>
+        <div class="contacto-bg"></div>
+        <form class="formulario" action="send-email.php" method="post">
+             <div class="campo">
+                 <label class="campo__label" for="nombre">Nombre</label>
+                 <input class="campo__field" type="text" name="name" placeholder="Tu Nombre" id="nombre" required>
+             </div>
+             <div class="campo">
+                 <label class="campo__label" for="email">E-mail</label>
+                 <input class="campo__field" type="email" name="email"  placeholder="Tu E-mail" id="email" required>
+             </div>
+             <div class="campo">
+                 <label class="campo__label" for="mensaje">Curso que te interesa</label>
+                 <textarea class="campo__field campo__field--textarea" name="mensaje" id="mensaje" cols="30" rows="10" required></textarea>
+             </div>
+    
+             <div class="campo">
+                 <input type="submit" value="Enviar" name="send" class="boton boton--primario">
+             </div>
+        </form>
+    </div>
 
     <footer class="footer">
         <div class="contenedor contenedor--footer">
@@ -115,6 +132,7 @@
         </div>
     </footer>
 
-    <script src="js/modernizr.js"></script>
+    <script src="build/js/modernizr.js"></script>
+    <script src="build/js/scripts.js"></script>
 </body>
 </html>

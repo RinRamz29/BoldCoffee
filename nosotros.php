@@ -31,7 +31,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
-    <header class="header">
+    <header class="header not-index">
         <div class="contenedor">
             <div class="barra">
                 <a class="logo" href="Index.php">
@@ -39,12 +39,11 @@
                 </a>
                 <nav class="navegacion">
                     <a href="cursos.php" class="navegacion__enlace">Cursos</a>
-                    <a id="enlace-contacto" href="contacto.php" class="navegacion__enlace">Contacto</a>
+                    <a href="contacto.php" class="navegacion__enlace">Contacto</a>
                     <a href="nosotros.php" class="navegacion__enlace">Nosotros</a>
                 </nav>
             </div>
         </div>
-
         <div class="header__text">
             <h2 class="no-margin">BoldCoffee Cursos</h2>
             <p class="no-margin">Aprende de los expertos con nuestros cursos especializados</p>
