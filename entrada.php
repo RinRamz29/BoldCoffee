@@ -84,7 +84,8 @@
                 <picture>
                     <source srcset="build/img/blog1.avif" type="image/avif">
                     <source srcset="build/img/blog1.webp" type="image/webp">
-                    <img loading="lazy" width="200" height="300" src="build/img/blog1.jpg" alt="Imagen de café molido">
+                    <source srcset="build/img/blog1.jpg" type="image/jpeg">
+                    <img loading="lazy" width="200" height="300" src="build/img/blog1.jpg" alt="Imagen Curso">
                 </picture>
             </div>
         </div>

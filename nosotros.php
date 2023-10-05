@@ -59,6 +59,12 @@
                     <source srcset="build/img/nosotros.webp" type="image/webp">
                     <img loading="lazy" width="200" height="300" src="build/img/nosotros.jpg" alt="Imagen con muchas tazas con café con arte latte">
                 </picture>
+                <picture>
+                    <source srcset="build/img/nosotros.avif" type="image/avif">
+                    <source srcset="build/img/nosotros.webp" type="image/webp">
+                    <source srcset="build/img/nosotros.jpg" type="image/jpeg">
+                    <img loading="lazy" width="200" height="300" src="build/img/nosotros.jpg" alt="Imagen de nosotros">
+                </picture>
             </div>
             <div class="sobre-nosotros__text">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe necessitatibus, tempora dolores atque error molestias aspernatur? Voluptas autem laborum ipsum praesentium quo accusamus optio quod nihil. Quod inventore nulla excepturi!</p>

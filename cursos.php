@@ -55,7 +55,8 @@
                 <picture>
                     <source srcset="build/img/blog1.avif" type="image/avif">
                     <source srcset="build/img/blog1.webp" type="image/webp">
-                    <img loading="lazy" width="200" height="300" src="build/img/blog1.jpg" alt="Imagen de café molido">
+                    <source srcset="build/img/blog1.jpg" type="image/">
+                    <img loading="lazy" width="200" height="300" src="build/img/blog1.jpg" alt="Imagen de Curso">
                 </picture>
             </div>
             <div class="curso-informacion">
@@ -78,8 +79,9 @@
                 <picture>
                     <source srcset="build/img/blog2.avif" type="image/avif">
                     <source srcset="build/img/blog2.webp" type="image/webp">
-                    <img loading="lazy" width="200" height="300" src="build/img/blog2.jpg" alt="Imagen de una taza de café con un libro">
-                </picture>   
+                    <source srcset="build/img/blog2.jpg" type="image/">
+                    <img loading="lazy" width="200" height="300" src="build/img/blog2.jpg" alt="Imagen de Curso">
+                </picture>
             </div>
             <div class="curso-info">
                 <h4 class="no-margin">Taller para tostar y moler granos</h4>
@@ -101,7 +103,8 @@
                 <picture>
                     <source srcset="build/img/blog3.avif" type="image/avif">
                     <source srcset="build/img/blog3.webp" type="image/webp">
-                    <img loading="lazy" width="200" height="300" src="build/img/blog3.jpg" alt="build/imgen de taza de café con granos de café a los lados">
+                    <source srcset="build/img/blog3.jpg" type="image/">
+                    <img loading="lazy" width="200" height="300" src="build/img/blog3.jpg" alt="Imagen de Curso">
                 </picture>
             </div>
             <div class="curso-info">
