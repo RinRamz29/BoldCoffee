@@ -1,0 +1,17 @@
+.alerta{
+    padding: .5rem;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 1rem 0;
+
+    &.error{
+        background-color: red;
+        color: white;
+    }
+
+    &.exito{
+        background-color: green;
+        color: white;
+    }
+}

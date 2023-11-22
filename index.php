@@ -117,25 +117,7 @@
              </div>
         </form>
     </div>
-
-    <footer class="footer">
-        <div class="contenedor contenedor--footer">
-            <div class="barra">
-                <a class="logo" href="Index.php">
-                    <h1 class="logo__nombre no-margin">Bold<span class="logo__bold">Coffee</span></h1>
-                </a>
-                <nav class="navegacion">
-                    <a href="cursos.php" class="navegacion__enlace">Cursos</a>
-                    <a id="enlace-contacto" href="contacto.php" class="navegacion__enlace">Contacto</a>
-                    <a href="nosotros.php" class="navegacion__enlace">Nosotros</a>
-                    <a href="https://www.Instagram.com" class="navegacion__enlace">Instagram</a>
-                    <a href="https://www.Facebook.com" class="navegacion__enlace">Facebook</a>
-                </nav>
-            </div>
-        </div>
-    </footer>
-
-    <script src="build/js/modernizr.js"></script>
-    <script src="build/js/scripts.js"></script>
-</body>
-</html>
+    
+<?php 
+    include 'footer.php';
+?>
