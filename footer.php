@@ -5,10 +5,10 @@
                     <h1 class="logo__nombre no-margin">Bold<span class="logo__bold">Coffee</span></h1>
                 </a>
                 <nav class="navegacion">
-                    <a href="cursos.php" class="navegacion__enlace">Cursos</a>
-                    <a id="enlace-contacto" href="contacto.php" class="navegacion__enlace">Contacto</a>
-                    <a href="nosotros.php" class="navegacion__enlace">Nosotros</a>
-                    <a href="blog.php" class="navegacion__enlace">Blog</a>
+                    <a href="/cursos.php" class="navegacion__enlace">Cursos</a>
+                    <a id="enlace-contacto" href="/contacto.php" class="navegacion__enlace">Contacto</a>
+                    <a href="/nosotros.php" class="navegacion__enlace">Nosotros</a>
+                    <a href="/blog.php" class="navegacion__enlace">Blog</a>
                 </nav>
             </div>
         </div>

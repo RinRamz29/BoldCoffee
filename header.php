@@ -15,7 +15,7 @@
     <title>BoldCoffee</title>
     <meta name="description" content="Página web de cursos de café">
     <!-- Prefetch -->
-    <link rel="prefetch" href= "nosotros.php"as="document">
+    <link rel="prefetch" href= "nosotros.php" as="document">
 
     <!--Preload-->
     <link rel="preload" href= "/build/css/app.css" as="style">
@@ -37,9 +37,9 @@
                     <h1 class="logo__nombre no-margin centrar-text">Bold<span class="logo__bold">Coffee</span></h1>
                 </a>
                 <nav class="navegacion">
-                    <a href="cursos.php" class="navegacion__enlace">Cursos</a>
-                    <a href="contacto.php" class="navegacion__enlace">Contacto</a>
-                    <a href="nosotros.php" class="navegacion__enlace">Nosotros</a>
+                    <a href="/cursos.php" class="navegacion__enlace">Cursos</a>
+                    <a href="/contacto.php" class="navegacion__enlace">Contacto</a>
+                    <a href="/nosotros.php" class="navegacion__enlace">Nosotros</a>
                 </nav>
             </div>
         </div>
